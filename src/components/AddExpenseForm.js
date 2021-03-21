@@ -36,6 +36,8 @@ const AddExpenseForm = () => {
                         value={name}
                         onChange={(event) => setName(event.target.value)}
                     ></input>
+                    
+                    <button type="submit" className="btn btn-primary mt-3">Save</button>
                 </div>
                 <div className="col-sm">
                     <label for="cost">Cost</label>
@@ -48,9 +50,9 @@ const AddExpenseForm = () => {
                         onChange={(event) => setCost(event.target.value)}
                     ></input>
                 </div>
-            <div className="col-sm">
+            {/* <div className="col-sm">
                 <button type="submit" className="btn btn-primary mt-3">Save</button>
-            </div>
+            </div> */}
             </div>            
         </form>
     )
